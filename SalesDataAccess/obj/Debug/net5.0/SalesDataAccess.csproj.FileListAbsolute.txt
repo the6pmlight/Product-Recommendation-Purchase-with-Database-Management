@@ -1,0 +1,15 @@
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\bin\Debug\net5.0\SalesDataAccess.deps.json
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\bin\Debug\net5.0\SalesDataAccess.dll
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\bin\Debug\net5.0\ref\SalesDataAccess.dll
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\bin\Debug\net5.0\SalesDataAccess.pdb
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\bin\Debug\net5.0\SalesDataModel.dll
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\bin\Debug\net5.0\SalesDataModel.pdb
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\obj\Debug\net5.0\SalesDataAccess.csproj.AssemblyReference.cache
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\obj\Debug\net5.0\SalesDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\obj\Debug\net5.0\SalesDataAccess.AssemblyInfoInputs.cache
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\obj\Debug\net5.0\SalesDataAccess.AssemblyInfo.cs
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\obj\Debug\net5.0\SalesDataAccess.csproj.CoreCompileInputs.cache
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\obj\Debug\net5.0\SalesDataAccess.csproj.CopyComplete
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\obj\Debug\net5.0\SalesDataAccess.dll
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\obj\Debug\net5.0\ref\SalesDataAccess.dll
+D:\DL\Project_DL\Process\ProductRecommendationPurchase\SalesDataAccess\obj\Debug\net5.0\SalesDataAccess.pdb

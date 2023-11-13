@@ -1,0 +1,59 @@
+﻿<Window x:Class="PurchaseRecommendationWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PurchaseRecommendationWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="705" Width="931">
+    <Grid Margin="0,0,10,22">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="466*"/>
+            <ColumnDefinition Width="172*"/>
+            <ColumnDefinition Width="283*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnStep1" Content="Step 1: Create MLContext" HorizontalAlignment="Left" Margin="46,35,0,0" VerticalAlignment="Top" Width="164" Click="btnStep1_Click"/>
+        <Button x:Name="btnStep2" Content="Step 2: Read the training data" HorizontalAlignment="Left" Margin="46,122,0,0" VerticalAlignment="Top" Width="164" Click="btnStep2_Click"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="46,77,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.52,-0.213"/>
+        <TextBox x:Name="txtTrainRate" HorizontalAlignment="Left" Height="23" Margin="121,81,0,0" TextWrapping="Wrap" Text="80" VerticalAlignment="Top" Width="67"/>
+        <Label Content="%" HorizontalAlignment="Left" Margin="205,77,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.384,-0.638"/>
+        <Button x:Name="btnStep3" Content="Step 3: Configuration Matrix Factorization Trainer" HorizontalAlignment="Left" Margin="46,170,0,0" VerticalAlignment="Top" Width="280" Click="btnStep3_Click"/>
+        <Button x:Name="btnStep4" Content="Step 4: Create Matrix Factorization Trainer" HorizontalAlignment="Left" Margin="46,220,0,0" VerticalAlignment="Top" Width="280" Click="btnStep4_Click"/>
+        <Button x:Name="btnStep5" Content="Step 5 : Train the model" HorizontalAlignment="Left" Margin="46,268,0,0" VerticalAlignment="Top" Width="164" Click="btnStep5_Click"/>
+        <Button x:Name="btnStep6" Content="Step 6: Evaluate Model" HorizontalAlignment="Left" Margin="46,317,0,0" VerticalAlignment="Top" Width="164" Click="btnStep6_Click"/>
+        <Label x:Name="lblStep1Status" Content=" " HorizontalAlignment="Left" Margin="273,36,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblStep2Status" Content=" " HorizontalAlignment="Left" Margin="273,119,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblStep3Status" Content=" " HorizontalAlignment="Center" Margin="0,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.739,0.688" Width="302" Grid.Column="1"/>
+        <Label x:Name="lblStep4Status" Content=" " HorizontalAlignment="Left" Margin="414,220,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.03,0.255" Width="288" Grid.ColumnSpan="3"/>
+        <Label x:Name="lblStep5Status" Content=" " HorizontalAlignment="Left" Margin="273,268,0,0" VerticalAlignment="Top"/>
+        <Label Content="Loss Function" HorizontalAlignment="Left" Margin="172,355,0,0" VerticalAlignment="Top"/>
+        <Label Content="Mean Absolute Error (MAE)" HorizontalAlignment="Left" Margin="172,386,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.59,0.218"/>
+        <Label Content="Mean Squared Error (MSE)" HorizontalAlignment="Left" Margin="172,417,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtLossFunction" HorizontalAlignment="Left" Height="23" Margin="347,355,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="133" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtMAE" HorizontalAlignment="Left" Height="23" Margin="347,386,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="133" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtMSE" HorizontalAlignment="Left" Height="23" Margin="347,417,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="133" Grid.ColumnSpan="2"/>
+        <Label Content="Root Mean Squared Error (RMSE)" HorizontalAlignment="Left" Margin="68,386,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label Content="RSquared" HorizontalAlignment="Left" Margin="68,417,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="txtRMSE" HorizontalAlignment="Left" Height="23" Margin="106,386,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <TextBox x:Name="txtRSquared" HorizontalAlignment="Left" Height="23" Margin="106,417,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <Button x:Name="btnStep7" Content="Step 7: Test Single Prediction" HorizontalAlignment="Left" Margin="46,473,0,0" VerticalAlignment="Top" Width="164" Height="25" Click="btnStep7_Click"/>
+        <Label Content="Customer Id" HorizontalAlignment="Left" Margin="178,512,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.341,-0.311"/>
+        <TextBox x:Name="txtCustomerId" HorizontalAlignment="Left" Height="23" Margin="265,516,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120"/>
+        <Label Content="Product Id" HorizontalAlignment="Left" Margin="438,516,0,0" VerticalAlignment="Top" Height="23" Width="67" RenderTransformOrigin="0.86,0.646" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtProductId" HorizontalAlignment="Left" Height="23" Margin="44,516,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label Content="Results" HorizontalAlignment="Left" Margin="180,557,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnStep8" Content="Step 8: Consume" HorizontalAlignment="Left" Margin="46,615,0,0" VerticalAlignment="Top" Width="164"/>
+        <Button x:Name="btnStep81" Content="Step 8.1: Save Model" HorizontalAlignment="Left" Margin="267,615,0,0" VerticalAlignment="Top" Width="152" Click="btnStep81_Click"/>
+        <Button x:Name="btnStep82" Content="Step 8.2: Load Model" HorizontalAlignment="Center" Margin="0,615,0,0" VerticalAlignment="Top" Width="158" Click="btnStep82_Click" Grid.Column="1"/>
+        <Button x:Name="btnPredictionForAll" Content="Prediction for all Users" HorizontalAlignment="Left" Margin="45,615,0,0" VerticalAlignment="Top" Width="172" Foreground="#FFB00B0B" Click="btnPredictionForAll_Click" Grid.Column="2"/>
+        <Label x:Name="lblStep6Status" Content="" HorizontalAlignment="Left" Margin="273,311,0,0" VerticalAlignment="Top" Width="186"/>
+        <RichTextBox x:Name="txtResult" HorizontalAlignment="Left" Height="39" Margin="265,557,0,0" VerticalAlignment="Top" Width="365" Grid.ColumnSpan="2">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=" "/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
